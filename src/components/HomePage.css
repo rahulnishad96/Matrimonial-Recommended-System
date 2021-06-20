@@ -1,0 +1,176 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.form-section
+{
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(90deg, #940f30, #5c1a55);
+    background-size: 100% 100%;
+    color: white;
+}
+.title-section{
+    background-image: url("https://img2.sangam.com/assets/home/HomePage_Marathi.jpg");
+    width: 100%;
+    height: 52vh;
+    color:white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: center;
+}
+.title
+{
+    font-size: 40px;
+    padding-top: 360px;
+}
+.heading{
+    padding-top: 40px;
+    font-size: 22px;
+}
+.explain{
+    font-size: 15px;
+}
+.form-div
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.form
+{
+    background-color: white;
+    height: 220px;
+    width: 885px;
+    border-radius: 5px;
+}
+.why
+{
+    height: 300px;
+    width: 100%;
+    background-color:white;
+    
+}
+.why-heading
+{
+    padding-top: 35px;
+    font-size: 25px;
+    font-weight: 400;    
+}
+.why-heading-border{
+    width: 50px;
+    border-bottom: 2px solid rgb(143, 11, 11);
+    padding-top: 30px;
+    margin: auto;
+}
+.why-reason-div{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 20px auto 0px auto;
+}
+.reason{
+    width: 116px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+}
+.trophy{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(120, 197, 96);
+    padding:15px 15px;
+     margin: 5px auto;
+    border-radius: 50%;
+    
+}
+.reason h6{
+    margin-top: 5px;
+}
+.reason p{
+    margin-top: 5px;
+    font-size: 12px;
+}
+.handshake{
+        width: 50px;
+        height: 50px;
+        background-color: rgb(96, 165, 197);
+        padding:15px 15px;
+         margin: 5px auto;
+        border-radius: 50%;
+        
+}
+.lock{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(155, 60, 60);
+    padding:15px 15px;
+     margin: 5px auto;
+    border-radius: 50%;
+    
+}
+.check{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(192, 144, 66);
+    padding:15px 15px;
+     margin: 5px auto;
+    border-radius: 50%;
+    
+}
+.about-us
+{
+    height: 250px;
+    width: 100%;
+    background: linear-gradient(90deg, #d6eee0, #c9d5e2);
+    background-size: 100% 100%;
+}
+.about-us .explain{
+    width: 57%;
+    margin: auto;
+    padding-top: 30px;
+    word-spacing: 3px;
+}
+.story
+{
+    width: 100%;
+    height: 500px;
+    background-color: aquamarine;
+}
+.story .heading{
+    color: #940f30;
+    padding-top: 30px;
+}
+@media screen and (max-width:1200px) {
+    .title{
+        font-size: 33px;
+    }
+    
+}
+@media screen and (max-width:990px) {
+    .title{
+        font-size: 25px;
+    }
+    .heading{
+        padding-top: 25px;
+        font-size: 20px;
+    }
+    .explain{
+        font-size: 13px;
+    }
+    
+}
+@media screen and (max-width:770px) {
+    .title{
+        font-size: 18px;
+    }
+    
+    
+
+
+}

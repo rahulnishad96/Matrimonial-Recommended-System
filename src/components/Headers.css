@@ -1,0 +1,34 @@
+img{
+    height: 50px;
+}
+.nav
+{
+     display: flex;
+    justify-content: space-around; 
+}
+.btn-login
+{
+    color:rgb(151, 16, 34);
+    border: none;
+    margin-top: 14px;
+    font-size: 14px;
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 6px;
+}
+span{
+    opacity: 0.4;
+    cursor: default;
+}
+.btn-reg
+{
+    border: none;
+    margin-left: 6px;
+    margin-top: 14px;
+    font-size: 14px;
+    background-color: white;
+    color:rgb(151, 16, 34);
+    font-weight: 600;
+    cursor: pointer;
+}
