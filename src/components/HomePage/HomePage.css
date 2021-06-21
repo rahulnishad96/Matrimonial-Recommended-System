@@ -6,6 +6,7 @@
     scroll-behavior: smooth;
     
 }
+
 .form-section
 {
     height: 400px;
@@ -44,7 +45,7 @@
 }
 .form
 {
-    background-color: white;
+    background-color:white;
     height: 220px;
     width: 900px;
     border-radius: 5px;
@@ -230,7 +231,7 @@
     margin: auto;
     padding-top: 30px;
     word-spacing: 3px;
-    font-size: 18px;
+    font-size: 17px;
 }
 .story
 {
@@ -409,7 +410,7 @@
 }
 .story .card-box{
     
-    /* margin: 10px auto 0 auto;*/
+    
     height: 330px; 
     width: 90%;
     display: flex;

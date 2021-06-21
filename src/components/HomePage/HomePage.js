@@ -20,7 +20,7 @@ function HomePage() {
                         <div className="first-row">
                             <div className="full-name">
                                 <p>Full Name </p>
-                                <input placeholder="Full Name" required/>
+                                <input placeholder="Full Name" requiryed/>
                             </div>
                             <div className="gender">
                                 <p>Select </p>
@@ -116,7 +116,7 @@ function HomePage() {
                         <a href="#" target="_blank">Read more</a>
                     </div>
                     <div className="card">
-                        <img src="https://s3.envato.com/files/288644194/_8532770.jpg" alt="image"></img>
+                        <img src="https://s3.envato.com/files/288644194/_8532770.jpg" alt="image"/>
                         <p>Rohit and Aruhi</p>
                         <a href="#" target="_blank">Read more</a>
                     </div>
