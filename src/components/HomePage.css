@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
+    
 }
 .form-section
 {
@@ -38,19 +39,113 @@
 .form-div
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 40px;
 }
 .form
 {
     background-color: white;
     height: 220px;
-    width: 885px;
+    width: 900px;
     border-radius: 5px;
+    color:black;
+    padding: 10px;
 }
+.form .first-row{
+    justify-content: space-around;
+    display: flex;
+    text-align: left;
+}
+.form .first-row  p {
+    font-size: 12px;
+    text-align: left;
+    color: rgb(25, 25, 173);
+}
+.form .first-row .full-name input{
+    border: none;
+    border-bottom: 1px solid rgba(22, 2, 2,0.3);
+    width: 330px;
+    padding: 10px 0px 5px 0px;
+    font-size: 17px;
+    text-align: left;
+}
+.form .first-row .full-name input:focus{
+    outline: none;
+}
+.form .first-row .gender form{
+    width: 300px;
+    font-size: 16px;
+    padding-top: 5px;
+    text-align: left;
+}
+.form .first-row .gender form label{
+    padding: 0px 20px 0px 5px;
+}
+.form .first-row .gender p{
+    padding-left: 0px;
+}
+.form .first-row .gender form label:first-child{
+    font-size: 18px;
+    padding-left: 0px;
+    text-align: left;
+    justify-self: start;
+}
+
+.form .first-row .gender form input{
+    padding-right: 10px;
+}
+
+.form .second-row{
+    margin-top: 20px;
+    justify-content: space-around;
+    display: flex;
+    text-align: left;
+}
+.form .second-row  p {
+    font-size: 12px;
+    text-align: left;
+    color: rgb(25, 25, 173);
+}
+
+.form .second-row select{
+    border: none;
+    border-bottom: 1px solid rgba(22, 2, 2,0.3);
+    width: 330px;
+    padding: 9px 0px 0px 0px;
+    font-size: 17px;
+    opacity: 0.8;
+    text-align: left;
+    
+}
+.form .second-row select:focus{
+    outline: none;
+}
+.form .second-row select option{
+    height: 20px;
+   
+}
+.form .second-row .form-community{
+    width: 300px;
+}
+
+.form .form-btn{
+    margin-top: 35px;
+    border: none;
+    width: 170px;
+    height:45px;
+    font-size: 16px;
+    background-color: rgb(52, 52, 141);
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    word-spacing: 2px;
+    cursor: pointer;
+}
+
+
 .why
 {
-    height: 300px;
+    height: 310px;
     width: 100%;
     background-color:white;
     
@@ -75,8 +170,8 @@
     margin: 20px auto 0px auto;
 }
 .reason{
-    width: 116px;
-    height: 150px;
+    width: 215px;
+    height: 160px;
     display: flex;
     flex-direction: column;
     opacity: 0.8;
@@ -92,10 +187,11 @@
 }
 .reason h6{
     margin-top: 5px;
+    font-size: 15px;
 }
 .reason p{
     margin-top: 5px;
-    font-size: 12px;
+    font-size: 16px;
 }
 .handshake{
         width: 50px;
@@ -126,16 +222,15 @@
 }
 .about-us
 {
-    height: 250px;
+    height: 280px;
     width: 100%;
-    /* background: linear-gradient(90deg, #d6eee0, #c9d5e2);
-    background-size: 100% 100%; */
 }
-.about-us .explain{
-    width: 57%;
+.about-us .explain-p{
+    width: 70%;
     margin: auto;
     padding-top: 30px;
     word-spacing: 3px;
+    font-size: 18px;
 }
 .story
 {
@@ -201,9 +296,10 @@
     border-radius: 3px;
     cursor: pointer;
     text-decoration: none;
+    cursor: pointer;
 }
 .footer{
-    height: 100px;
+    height: 80px;
     width:100%;
     padding: 5px;
 }
@@ -219,8 +315,52 @@
     .title{
         font-size: 33px;
     }
+    .form
+{
+    width: 800px;
+}
+.form .form-btn{
+    width: 140px;
+}
+.story .card-box{
+    
+    margin: 10px auto 0 auto;
+    height: 350px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.story .card{
+    height: 250px;
+    width: 250px;
+    margin-top: 40px;
     
 }
+
+
+.story .card p{
+    margin: 10px auto 15px auto;
+    font-size: 19px;
+    font-weight: 500;
+    color: rgb(34, 31, 31);
+}
+
+.about-us
+{
+    height: 320px;
+    width: 100%;
+}
+
+    
+}
+
+
+
+
+
 @media screen and (max-width:990px) {
     .title{
         font-size: 25px;
@@ -232,14 +372,174 @@
     .explain{
         font-size: 13px;
     }
+ 
+    .form
+{
+    width: 650px;
+}
+.form .form-btn{
+    width: 120px;
+}
+.form .first-row .full-name input{
+    width: 280px;  
+}
+
+.form .first-row .gender form{
+    width: 280px;
+}
+
+.form .second-row select{
+    width: 280px;
     
 }
+
+.form .second-row .form-community{
+    width: 280px;
+}
+
+.why-reason-div{
+    width: 90%;
+}
+.reason{
+    width: 210px;
+    height: 160px;
+}
+.reason p{
+    font-size: 16px;
+}
+.story .card-box{
+    
+    /* margin: 10px auto 0 auto;*/
+    height: 330px; 
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.story .card{
+     height: 200px;
+    width: 200px;
+    margin-top: 40px; 
+    
+}
+
+.about-us
+{
+    height: 350px;
+    width: 100%;
+}
+
+
+
+    
+}
+
 @media screen and (max-width:770px) {
     .title{
         font-size: 18px;
     }
+    .form
+{
+    width: 450px;
+    height: 380px;
+}
+.form-section
+{
+    height: 550px;
+}
+.form .first-row{
+     justify-content:flex-start; 
+    flex-direction: column;
+}
+
+.form .second-row{
+    margin-top: 0px;
+    flex-direction: column;
+     justify-content: flex-start; 
+}
+.form .form-btn{
+    width: 130px;
+    margin-top: 15px;
+}
+.form .first-row .full-name input{
+    margin-bottom: 20px;
+    width: 400px;  
+    padding-left: 0px;
     
+}
+
+.form .first-row .gender form{
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+.form .second-row select{
+    margin-bottom: 20px;
+    width: 400px;
     
+}
+    
+.why-reason-div{
+    width: 100%;
+}
+.why
+{
+    height: 330px;  
+}
+.reason{
+    width: 210px;
+    height: 170px;
+}
+.reason p{
+    font-size: 16px;
+}
+.story
+{
+    width: 100%;
+    height: 1100px;
+    background-color: rgb(223, 233, 230);
+}
+
+.story .card-box{
+    
+    margin: 100px auto 0 auto;
+    height: 750px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.story .card{
+    height: 300px;
+    width: 300px;
+    margin: 40px auto 0px auto;
+    
+}
+
+
+.story .card p{
+    margin: 10px auto 15px auto;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(34, 31, 31);
+}
+
+.story .heading{
+    color: #940f30;
+    padding-top: 30px;
+    font-size: 30px;
+}
+.about-us
+{
+    height: 460px;
+    width: 100%;
+}
+
 
 
 }

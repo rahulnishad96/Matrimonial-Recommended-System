@@ -17,7 +17,52 @@ function HomePage() {
                 <p className="explain">Genuine Profiles | Safe & Secure | Detailed Family Information</p>
                 <div className="form-div">
                     <div className="form">
-                        {/* <Form/> */}
+                        <div className="first-row">
+                            <div className="full-name">
+                                <p>Full Name </p>
+                                <input placeholder="Full Name" required/>
+                            </div>
+                            <div className="gender">
+                                <p>Select </p>
+                                <form>
+                                    <label for="male">Gender </label>
+                                    <input type="radio" name="gender" id="male" value="male"/>
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" id="female" value="female"/>
+                                    <label for="female">Female</label>
+                                </form>
+                            </div>
+                        </div>
+                        <div className="second-row">
+                        <div className="mother-tongue">
+                            <p>Mother Tongue</p>
+                            <select name="mother-Tongue" >
+                                <option value="Hindi">Hindi</option>
+                                <option value="English">English</option>
+                                <option value="Bangali">Bangali</option>
+                                <option value="Tamil">Tamil</option>
+                                <option value="Telugu">Telugu</option>
+                                <option value="Punjabi">Punjabi</option>
+                                <option value="Gujrati">Gujrati</option>
+                                <option value="Kannada">Kannada</option>
+                                <option value="Urdu">Urdu</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div className="form-community">
+                            <p>Community</p>
+                            <select name="community">
+                                <option value="Hindu">Hindu</option>
+                                <option value="Muslim">Muslim</option>
+                                <option value="Christian">Christian</option>
+                                <option value="Jain">Jain</option>
+                                <option value="Sikh">Sikh</option>
+                                <option value="Buddist">Buddist</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        </div>
+                        <button className="form-btn">Lets Begin</button>
                     </div>
                 </div>
             </section>
@@ -81,7 +126,7 @@ function HomePage() {
             <section className="about-us">
                 <p className="why-heading">About Us</p>
                 <div className="why-heading-border"></div>
-                <p className="explain">This cite is a matchmaking service created for parents who are looking for a life partner for their loved ones. Unlike other Matrimonial services, we focus on providing detailed family and background information to help you take the next step with confidence. With over 80+ community sites, you can find a match from your own community. Sangam is part of Shaadi.com (sometimes mis-spelt as Shadi), the World's No. 1 Matchmaking service.</p>
+                <p className="explain-p">This cite is a matchmaking service created for parents who are looking for a life partner for their loved ones. Unlike other Matrimonial services, we focus on providing detailed family and background information to help you take the next step with confidence. With over 80+ community sites, you can find a match from your own community. Sangam is part of Shaadi.com (sometimes mis-spelt as Shadi), the World's No. 1 Matchmaking service.</p>
             </section>
 
             <section className="community">
