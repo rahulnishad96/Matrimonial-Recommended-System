@@ -5,7 +5,7 @@ import './HomePage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faHandshake, faLock, faTrophy } from '@fortawesome/free-solid-svg-icons'
 // import '../node_modules/font-awesome/css/font-awesome.min.css'; 
-function HomePage() {
+function HomePage(props) {
     return (
         <div>
             {/* <img className="homepage-img"src="https://img2.sangam.com/assets/home/HomePage_Marathi.jpg" alt="homepageImage"></img> */}
@@ -13,6 +13,7 @@ function HomePage() {
                 <p className="title">...because a marriage is between two families</p>
             </section>
             <section className="form-section" id="form">
+                <form onSubmit={props.onRegister}>
                 <p className="heading">Matches Within Your Community</p>
                 <p className="explain">Genuine Profiles | Safe & Secure | Detailed Family Information</p>
                 <div className="form-div">
@@ -20,15 +21,15 @@ function HomePage() {
                         <div className="first-row">
                             <div className="full-name">
                                 <p>Full Name </p>
-                                <input placeholder="Full Name" requiryed/>
+                                <input placeholder="Full Name" required/>
                             </div>
                             <div className="gender">
                                 <p>Select </p>
-                                <form>
+                                <form required>
                                     <label for="male">Gender </label>
-                                    <input type="radio" name="gender" id="male" value="male"/>
+                                    <input type="radio" name="gender" id="male" value="male" required/>
                                     <label for="male">Male</label>
-                                    <input type="radio" name="gender" id="female" value="female"/>
+                                    <input type="radio" name="gender" id="female" value="female" required/>
                                     <label for="female">Female</label>
                                 </form>
                             </div>
@@ -36,7 +37,7 @@ function HomePage() {
                         <div className="second-row">
                         <div className="mother-tongue">
                             <p>Mother Tongue</p>
-                            <select name="mother-Tongue" >
+                            <select name="mother-Tongue" required>
                                 <option value="Hindi">Hindi</option>
                                 <option value="English">English</option>
                                 <option value="Bangali">Bangali</option>
@@ -51,7 +52,7 @@ function HomePage() {
                         </div>
                         <div className="form-community">
                             <p>Community</p>
-                            <select name="community">
+                            <select name="community" required>
                                 <option value="Hindu">Hindu</option>
                                 <option value="Muslim">Muslim</option>
                                 <option value="Christian">Christian</option>
@@ -62,9 +63,10 @@ function HomePage() {
                             </select>
                         </div>
                         </div>
-                        <button className="form-btn">Lets Begin</button>
+                        <button className="form-btn"  type="submit">Lets Begin</button>
                     </div>
                 </div>
+                </form>
             </section>
             <section className="why">
                 <p className="why-heading">Why register on this Website?</p>
@@ -137,7 +139,7 @@ function HomePage() {
             <footer className="footer">
                 <p>© Sangam, Community Matchmaking Trusted By Parents TM</p>
                 <p>Passionately created by <a href="#" target="_blank">Rahul Nishad</a></p>
-                <p>Version 0.1.72</p>
+                <p>Version 0.1.1</p>
             </footer>
         </div>
     )

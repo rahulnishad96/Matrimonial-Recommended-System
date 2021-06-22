@@ -1,17 +1,17 @@
 import React from 'react'
-import './Login.css';
-function Login(props) {
+import './Register2.css'
+function Register2(props) {
     return (
-        <div className="login">
+        <div className="register2">
             <nav>
                 <button onClick={props.onHome}>Home</button>
-                <button onClick={props.onHome}>Register</button>
+                <button onClick={props.onPrev}>Previous</button>
             </nav>
-            <section className="form-section" id="form">    ``
-                <p className="heading">Welcome Back!</p>
+            <section className="form-section" id="form">
+                <p className="heading">Just Completed</p>
                 <div className="form-div">
                     <div className="form">
-                        <p className="heading">Please Login</p>
+                        <p className="heading">Account Details</p>
                         <div className="first-row">
                             <div className="full-name">
                                 <p>Mobile Number or Email ID</p>
@@ -24,7 +24,19 @@ function Login(props) {
                                 <input placeholder="Password" required type="password"/>
                             </div>
                         </div>
-                        <button className="form-btn">Login</button>
+                        <div className="first-row">
+                        <div className="date">
+                                <p>Date of Birth</p>
+                                <input placeholder="" required type="date"/>
+                            </div>
+                        </div>
+                        <div className="first-row">
+                        <div className="full-name">
+                                <p>Mobile Number</p>
+                                <input placeholder="XXXXX XXXXX" required type="text"/>
+                            </div>
+                        </div>
+                        <button className="form-btn">Register</button>
                     </div>
                 </div>
             </section>
@@ -38,4 +50,4 @@ function Login(props) {
     )
 }
 
-export default Login
+export default Register2

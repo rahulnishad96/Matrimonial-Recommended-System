@@ -3,7 +3,7 @@
         margin: 0px;
         padding: 0px;
         scroll-behavior: smooth;
-    }
+}
     .register{
         background: linear-gradient(90deg, #940f30, #5c1a55);
         background-size: 100% 100%;
@@ -33,14 +33,14 @@
 
     .register .form-section
     {
-        height: 550px;
+        height: 800px;
         width: 100%;
         background: linear-gradient(90deg, #940f30, #5c1a55);
         background-size: 100% 100%;
         color: white;
     }
     .register .heading{
-        padding-top: 40px;
+        padding: 30px auto 20px auto;
         font-size: 22px;
     }
     .register .form .heading{
@@ -56,8 +56,8 @@
     .register .form
     {
         background-color: white;
-        height: 350px;
-        width: 390px;
+        height: 620px;
+        width: 900px;
         border-radius: 5px;
         color:black;
         padding: 10px;
@@ -85,8 +85,20 @@
     .register .form .first-row .full-name input:focus{
         outline: none;
     }
+    .register .form .second-row .full-name input{
+        border: none;
+        border-bottom: 1px solid rgba(22, 2, 2,0.3);
+        width: 330px;
+        padding: 10px 0px 5px 0px;
+        font-size: 17px;
+        text-align: left;
+
+    }
+    .register .form .second-row .full-name input:focus{
+        outline: none;
+    }
     .register .form .first-row .gender form{
-        width: 300px;
+        width: 330px;
         font-size: 16px;
         padding-top: 5px;
         text-align: left;
@@ -109,7 +121,7 @@
     }
 
     .register .form .second-row{
-        margin-top: 20px;
+        margin-top: 30px;
         justify-content: space-around;
         display: flex;
         text-align: left;
@@ -172,3 +184,108 @@
         text-decoration: none;
         color: white;
     }
+    @media screen and (max-width:1200px) {
+
+        .register .form
+       {
+           width: 800px;
+       }
+       
+       
+       }
+       
+       @media screen and (max-width:990px) {
+       
+        .register .form
+       {
+           width: 650px;
+       }
+       .register .form .form-btn{
+           width: 120px;
+       }
+       .register .form .first-row .full-name input{
+           width: 280px;  
+       }
+       .register .form .second-row .full-name input{
+        width: 280px;  
+    }
+       
+       .register .form .first-row .gender form{
+           width: 280px;
+       }
+       
+       .register .form .second-row select{
+           width: 280px;
+           
+       }
+       
+       .register .form .second-row .form-community{
+           width: 280px;
+       }
+       
+       
+       }
+       
+       
+       
+       
+       @media screen and (max-width:770px) {
+        .register{
+            color: white;
+            height: 1350px;
+            width: 100%;
+        }
+       .register .form
+       {
+           width: 450px;
+           height: 1050px;
+       }
+       .register .form-section
+       {
+           height: 1200px;
+       }
+       .register .heading{
+        padding: 30px auto 20px auto;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+       .register .form .first-row{
+            justify-content:flex-start; 
+           flex-direction: column;
+       }
+       
+       .register .form .second-row{
+           margin-top: 0px;
+           flex-direction: column;
+            justify-content: flex-start; 
+       }
+       .register .form .form-btn{
+           width: 130px;
+           margin-top: 15px;
+       }
+       .register .form .first-row .full-name input{
+           margin-bottom: 10px;
+           width: 400px;  
+           padding-left: 0px;
+           
+       }
+       .register .form .second-row .full-name input{
+        margin-bottom: 30px;
+        width: 400px;  
+        padding-left: 0px;
+        
+    }
+       
+       .register .form .first-row .gender form{
+           margin-bottom: 20px;
+           width: 400px;
+       }
+       
+       .register .form .second-row select{
+           margin-bottom: 30px;
+           width: 400px;
+           
+       }
+       
+       }
+              
