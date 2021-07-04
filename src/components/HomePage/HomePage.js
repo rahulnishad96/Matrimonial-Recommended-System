@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 //import Form from './FormComponent/Form'
 //import StoryItem from './StoryItem'
 import './HomePage.css';
@@ -6,6 +6,37 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faHandshake, faLock, faTrophy } from '@fortawesome/free-solid-svg-icons'
 // import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 function HomePage(props) {
+    const [fullName, setfullName] = useState("");
+    const [gender, setgender] = useState("");
+    const [motherTongue, setmotherTongue] = useState("Hindi");
+    const [community, setcommunity] = useState("Hindu");
+
+    const fullNameHandler = (e) => {
+        setfullName(e.target.value);
+    }
+
+    const gendarHandler = (e) => {
+        setgender(e.target.value);
+    }
+
+    const motherTongueHandler = (e) => {
+        setmotherTongue(e.target.value);
+    }
+
+    const communityHandler = (e) => {
+        setcommunity(e.target.value);
+    }
+
+    const details = {
+        fullName:fullName,
+        gender:gender,
+        motherTongue:motherTongue,
+        community:community
+    };
+
+    const SubmitHandler = () => {
+        props.onRegister(details);
+    }
     return (
         <div>
             {/* <img className="homepage-img"src="https://img2.sangam.com/assets/home/HomePage_Marathi.jpg" alt="homepageImage"></img> */}
@@ -13,7 +44,7 @@ function HomePage(props) {
                 <p className="title">...because a marriage is between two families</p>
             </section>
             <section className="form-section" id="form">
-                <form onSubmit={props.onRegister}>
+                <form onSubmit={SubmitHandler}>
                 <p className="heading">Matches Within Your Community</p>
                 <p className="explain">Genuine Profiles | Safe & Secure | Detailed Family Information</p>
                 <div className="form-div">
@@ -21,15 +52,15 @@ function HomePage(props) {
                         <div className="first-row">
                             <div className="full-name">
                                 <p>Full Name </p>
-                                <input placeholder="Full Name" required/>
+                                <input placeholder="Full Name" required onChange={fullNameHandler}/>
                             </div>
                             <div className="gender">
                                 <p>Select </p>
                                 <form required>
                                     <label for="male">Gender </label>
-                                    <input type="radio" name="gender" id="male" value="male" required/>
+                                    <input type="radio" name="gender" id="male" value="male" required onChange={gendarHandler}/>
                                     <label for="male">Male</label>
-                                    <input type="radio" name="gender" id="female" value="female" required/>
+                                    <input type="radio" name="gender" id="female" value="female" required onChange={gendarHandler}/>
                                     <label for="female">Female</label>
                                 </form>
                             </div>
@@ -37,7 +68,7 @@ function HomePage(props) {
                         <div className="second-row">
                         <div className="mother-tongue">
                             <p>Mother Tongue</p>
-                            <select name="mother-Tongue" required>
+                            <select name="mother-Tongue" required onChange={motherTongueHandler}>
                                 <option value="Hindi">Hindi</option>
                                 <option value="English">English</option>
                                 <option value="Bangali">Bangali</option>
@@ -52,7 +83,7 @@ function HomePage(props) {
                         </div>
                         <div className="form-community">
                             <p>Community</p>
-                            <select name="community" required>
+                            <select name="community" required onChange={communityHandler}>
                                 <option value="Hindu">Hindu</option>
                                 <option value="Muslim">Muslim</option>
                                 <option value="Christian">Christian</option>
